@@ -27,10 +27,12 @@ def check(input_value, included_letter):
     count = 0
     global greatest_frequency, most_likely_word
     temp = 0
+    seen = []
     for i in input_value:
         temp += inverse_frequency_score.get(i)
-        if i in included_letter:
+        if i in included_letter and i not in seen:
             count += 1
+        seen.append(i)
     if input_value.lower() in english_words and count == len(included_letter):
         if temp > greatest_frequency:
             greatest_frequency = temp
@@ -53,9 +55,12 @@ def brute_force(current, position, letters, included_letter):
             brute_force(current + letter, position + 1, letters, included_letter)
 
 def main():
+    global greatest_frequency, most_likely_word
     letters = string.ascii_lowercase
 
     while True:
+        greatest_frequency = 0
+        most_likely_word = None
         fixed_index.clear()
         fixed_char.clear()
 

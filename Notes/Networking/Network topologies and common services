@@ -1,0 +1,31 @@
+
+
+Topologies:
+    - Star
+    - Bus
+    - Ring
+    - Mesh
+    - Hybrid
+
+
+
+Web Servers (HTTP/HTTPS)
+
+Database Servers (MySQL, PostgreSQL, MSSQL)
+
+Directory Services (LDAP, Active Directory)
+
+Mail Servers (SMTP, POP3, IMAP)
+
+File Sharing Services (SMB, NFS)
+
+Remote Management Services (RDP, VNC)
+
+SNMP (Simple network management protocol)
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+
+
+/etc/passwd:
+    This file contains a list of all user accounts on the system. Each line represents a user and includes fields like username, user ID (UID), group ID (GID)
+    home directory, and the default shell. Importantly, it does not store passwords
+
+
+
+/etc/shadow:
+    This is the critical file that stores encrypted user passwords (hashes) and password expiration information. it's highly protected and typically
+    only readable by the root user. If you can gain access to this file, you can attempt to crack the password hashes offline
+
+
+/etc/group:
+    This file lists all the groups on the system and the users who belong to each group. Understanding group memberships can reveal which users
+    have access to specific resources or can execute certain commands
+
+
+
+
+
+
+

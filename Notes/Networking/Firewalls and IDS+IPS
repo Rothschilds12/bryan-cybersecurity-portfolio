@@ -1,0 +1,57 @@
+
+
+
+Firewalls operate at different levels:
+
+Packet-Filtering Firewalls:
+    These are the simplest, inspecting individuals network packets based on basic information like source/destination IP addresses, port numbers, and protocols.
+    If a packet doesn't match an allowed rule, it's dropped
+
+Stateful Firewalls:
+    More sophisticated, these firewalls track the "state" of active network connections. They remember legitimate outgoing connections and automatically allow
+    return traffic for those connections. This makes them much harder to bypass with simple, unsolicited incoming packets
+
+Application-Layer Firewalls (Proxies):
+    These operate at the application layer of the TCP/IP model, understanding the context of specific applications and protocols (like HTTP). The can inspect
+    the content of traffic, not just the headers, offering deeper protection
+
+
+
+
+
+
+Intrusion Detection Systems (IDS): The Silent Alarms
+
+    Signature-Based IDS:
+        This is like an antivirus program. It has a database of known attack patterns (signatures) and flags traffic that matches them
+
+    Anomaly-Based IDS:
+        This type learns what "normal" network behavior looks like and flags anything that deviates significantly from that baseline
+
+An IDS is passive; it detects and alerts, but it doesn't actively block the malicious traffic
+
+
+
+
+Intrusion Prevention Systems (IPS): The Active Defenders
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

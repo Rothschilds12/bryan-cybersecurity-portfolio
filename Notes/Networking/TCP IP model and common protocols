@@ -1,0 +1,48 @@
+http (80)
+https (443)
+
+https adds encryption (SSL/TLS) for secure communication
+
+
+
+ftp (File transfer protocol)
+data (20)
+control (21)
+
+Often found with weak credentials (e.g., anonymous login) or vulnerable software versions allowing unauthorized file access or upload
+
+
+
+
+ssh (Secure Shell)
+(22)
+
+Provides a secure channel over an unsecured network for remote-line access, file transfers, and tunneling
+Good target for brute-force attacks against weak passwords, or exploiting vulnerable ssh server versions
+
+
+
+
+
+smb (Server Message Block)
+NetBIOS Session Service (139)
+SMB over TCP (445)
+
+Primarily used by windows systems for file sharing, printer sharing, and interprocess communication
+Is a goldmine for enumeration (e.g., listing shares, users) and exploitation (e.g., EternalBlue, misconfigured permissions, weak credentials) It's crucial for Windows environments and Active directory attacks
+
+
+
+
+dns (Domain Name Service)
+TCP and UDP (53)
+
+Translates human-readable domain names (e.g., example.com) into machine-readable IP address
+NDS can be a rich source of information during reconnaissance (e.g., zone transfers, subdomain enumeration). Misconfigurations can sometimes lead to cache poisoning or other vulnerabilities
+
+A successful zone transfer reveals all DNS records for a domain
+
+
+
+
+
